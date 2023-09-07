@@ -1,0 +1,22 @@
+version: '3.5'
+services:
+  serverless:
+    build: 
+      context: ./serverless
+      args: 
+        - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+        - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+    tty: true
+    stdin_open: true
+    #image: serverless
+    working_dir: /app
+    volumes:
+      - .:/app
+    container_name: sls-python3-aws-lambda1
+    env_file:
+      - .env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
