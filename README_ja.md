@@ -4,7 +4,7 @@
 
 - このリポジトリでは、[serverless-framework](https://www.serverless.com/) でのAWS Lambda の Python を利用した場合のローカル開発環境を手助けするサンプルです。
 
-- Qiitaの記事にも記載しています。https://qiita.com/drafts/511e352709bbf8483fb8/
+- Qiitaの記事にも記載しています。https://qiita.com/ssugimoto/items/511e352709bbf8483fb8
 
 # Requirement
 
