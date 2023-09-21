@@ -1,4 +1,4 @@
-# serverless-framework-python-example
+# serverless-framework-python-example2
 
 [In English](README.md)
 
@@ -60,12 +60,12 @@ docker compose up -d
 
 1. docker コンテナ起動 
 ```bash
-git clone https://github.com/ssugimoto/serverless-framework-nestjs-example.git
-cd serverless-framework-nestjs-example
-python docker compose up -d
+git clone https://github.com/ssugimoto/serverless-framework-python-example2.git
+cd serverless-framework-python-example2
+docker compose up -d
 ```
 
-2. VS Codeでdocker composeで起動したコンテナの中に入る
+2. VS Codeから拡張機能を利用し docker composeで起動したコンテナの中に入る
 3. VS Codeのターミナルで node, npm, sls のPATHを確認する
 
 ```sh
@@ -86,7 +86,7 @@ Python 3.11.5
 
 4.  AWS Lambdaのpythonコードのテンプレートからコード生成
 
-- コンテナの中でコマンド実行
+- コンテナの中で AWS LambdaのPython template となる `sls create` コマンド実行
 ```
 cd /app/app
 serverless create --template aws-python3 --name lambda-sample --path ./lambda-sample
